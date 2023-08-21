@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+body{
+  background-color:#0f0409e4;
+  background-image: url(https://images.unsplash.com/photo-1529310399831-ed472b81d589?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  font-family:Arial;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 2rem;
+}
+h1, h2{
+  color: #ffffff;
+  text-shadow: 10px 0px 10px rgba(235, 228, 228, 0.793);
 }
 
-.App-link {
-  color: #61dafb;
+p{
+  color: #ffffff;
+  border: 5px solid rgb(72, 90, 148);
+  padding: 10px;margin-top: 100px;
+  font-size: 25px;
+  background-color: rgba(89, 101, 124, 0.538);
+}
+button {
+  margin-top: 3rem;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #3b3d9c 5%, #7784cb 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+}
+button:hover {
+	background:linear-gradient(to bottom, #7784cb 5%, #3b3d9c 100%);
+	background-color:#6c6c7c;
+}
+button:active {
+	position:relative;
+	top:1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width:767px){
+  body{
+    background-size: 400px;
 }
+p{
+  font-size: 20px;
+}
+  }
+  
